@@ -1,5 +1,1 @@
-首先，我对此命令的基本格式画图总结  
-
-![截屏2021-11-07 13 13 22](https://user-images.githubusercontent.com/74129445/140633201-9df33ff1-a0b2-41ab-9ca5-bc03b0ed3a84.png)  
-
-附参考的解释链接：https://www.zhihu.com/question/272382580/answer/367491831
+`sudo`命令是插在其他命令之前的命令，全称为`superuser do`，也就是[超级用户才能够做的事情](https://github.com/ccfisme/command-of-Mac/blob/%E8%B6%85%E7%BA%A7%E7%94%A8%E6%88%B7%E8%83%BD%E5%A4%9F%E5%81%9A%E4%BB%80%E4%B9%88/README.md)只要在普通命令前插个`sudo`就好了
