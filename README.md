@@ -1,5 +1,7 @@
 # 记录用Mac的终端连阿里云Linux出错的原因及解决方法  
 
+**重点参考[阮一峰大神的文章](https://wangdoc.com/ssh/client.html)**
+
 * 首先，先把阿里云发来的东西全都删除  
 
 ![截屏2021-11-13 22 43 34](https://user-images.githubusercontent.com/74129445/141648014-5388363d-2352-4591-b71f-e5945abec016.png)  
