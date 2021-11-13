@@ -1,1 +1,1 @@
-本仓库主要参考[终端原理及操作](https://www.hanleylee.com/usage-of-terminal.html)、[Mac常用命令教程及解析](https://www.xiebruce.top/809.html#root-3)、对比[Linux命令教程](https://learnku.com/server/wikis/36491)
+主要参考的文章是[ssh基础使用](https://ccstudio.com.cn/linux/part1/remote.html#41-ssh%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8)，参考的视频是[ssh入门教程](https://www.bilibili.com/video/BV15J411p7gU?p=1&share_medium=android&share_plat=android&share_session_id=3087bd67-d252-45e8-bb63-b13820b43e9b&share_source=COPY&share_tag=s_i&timestamp=1636792143&unique_k=WK5z8A)
