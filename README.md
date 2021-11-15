@@ -18,45 +18,44 @@
 * 定制环境变量   
 >    环境变量是和 Shell 紧密相关的，用户登录系统后就启动了一个 Shell 。对于 Linux 来说一般是 bash ，但也可以重新设定或切换到其它的 Shell 。根据发行版本的情况， bash 有两个基本的系统级配置文件： /etc/bashrc 和 /etc/profile 。这些配置文件包含两组不同的变量： shell 变量和环境变量。前者只是在特定的 shell 中固定（如 bash ），后者在不同 shell 中固定。很明显， shell 变量是局部的，而环境变量是全局的。环境变量是通过 Shell 命令来设置的，设置好的环境变量又可以被所有当前用户所运行的程序所使用。对于 bash 这个 Shell 程序来说，可以通过变量名来访问相应的环境变量，通过 export 来设置环境变量。下面通过几个实例来说明。  
     
-  
     3.1 使用命令echo 显示环境变量  
     
     
-    ```
+```
     #本例使用echo显示常见的变量HOME   
     $ echo $HOME   
     /home/lqm   
-    ```
+```
   
     3.2 设置一个新的环境变量   
       
-    ```
+```
     $ export HELLO=“Hello!”   
     $ echo $HELLO  
      Hello!   
-    ```
+```
     
     3.3 使用 env 命令显示所有的环境变量   
            
-    ```
+```
     $ env   
     SSH_AGENT_PID=1875   
     HOSTNAME=lqm   
     SHELL=/bin/bash   
     TERM=xterm   
     HISTSIZE=1000   
-    ```
+```
        
     3.4  使用 set 命令显示所有本地定义的 Shell 变量   
            
-    ```
+```
     $ set   
     BASH=/bin/bash  
-    ```
+```
        
     3.5  使用 unset 命令来清除环境变量   
        
-    ```
+```
     $ export TEST=“test”       
     # 增加一个环境变量 TEST   
     $ env | grep TEST            
@@ -66,13 +65,13 @@
     #删除环境变量TEST   
     $ env | grep TEST           
     # 此命令无输出，证明环境变量 TEST 已经存在了
-    ```
+```
       
     3.6  使用 readonly 命令设置只读变量   
     
     如果使用了 readonly 命令的话，变量就不可以被修改或清除了。示例如下：   
        
-    ```
+```
     $ export TEST="Test..."                                        
     # 增加一个环境变量 TEST   
     $ readonly TEST 
@@ -83,7 +82,7 @@
     $ TEST="New" 
     #会发现此变量不能被修改   
     -bash: TEST: readonly variable   
-    ```
+```
       
  
     3.7  用 C 程序来访问和设置环境变量   
@@ -97,7 +96,7 @@
   
     另外，还有一个指针变量 environ ，它指向的是包含所有的环境变量的一个列表。下面的程序可以打印出当前运行环境里面的所有环境变量：   
        
-    ```
+```
     #include    
     extern char**environ;   
     int main ()       
@@ -107,7 +106,7 @@
         printf ("%s /n ",*var);   
         return 0;       
     } 
-    ```
+```
        
     3.8  通过修改环境变量定义文件来修改环境变量。  
     
@@ -116,20 +115,20 @@
     
   
        
-    ```
+```
     $cd #到用户根目录下   
     $ls -a                                  
     # 查看所有文件，包含隐藏的文件   
     $vi .bash_profile                   
     # 修改环境变量定义文件
     
-    ```
+```
        
     然后编辑你的 PATH 声明，其格式为：   
     
-    ```
+```
     PATH=$PATH::::------:   
-    ```
+```
     你可以自己加上指定的路径，中间用冒号隔开。环境变量更改后，在用户下次登陆时生效，如果想立刻生效，则可执行下面的语句：`$ source .bash_profile  ` 
     需要注意的是，最好不要把当前路径 `./` 放到 PATH 里，这样可能会受到意想不到的攻击。完成后，可以通过` $ echo $PATH` 查看当前的搜索路径。这样定制后，就可以避免频繁的启动位于 shell 搜索的路径之外的程序了。
   
