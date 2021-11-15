@@ -11,3 +11,5 @@
 ![image](https://user-images.githubusercontent.com/74129445/141823481-2207eb0f-6935-43dd-b13f-e893309cebbd.png)  
 
 明显可以看出来权限不一样，sudo su 是用来开本级用户的root的，sudo su - 是用来开整个电脑权限的
+[详细可见](https://www.xiebruce.top/601.html)：  
+![image](https://user-images.githubusercontent.com/74129445/141826873-b9f69e10-aebe-4a62-afae-11c273d18ba9.png)  
