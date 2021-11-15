@@ -1,7 +1,13 @@
-`sudo`命令是插在其他命令之前的命令，全称为`superuser do`，也就是[超级用户才能够做的事情](https://github.com/ccfisme/command-of-Mac/blob/%E8%B6%85%E7%BA%A7%E7%94%A8%E6%88%B7%E8%83%BD%E5%A4%9F%E5%81%9A%E4%BB%80%E4%B9%88/README.md)只要在普通命令前插个`sudo`就好了  
+首先，先说一下，[Mac不能用su开root权限，只能用sudo su开启](https://www.xiebruce.top/601.html)  
 
-不过后来又有了扩展功能，那就是`以其他用户权限来执行`，参考[sudo的配置](https://www.xiebruce.top/602.html)  
+然后，直观比较一下  
 
-如果在Mac上想开启这个权限，可以参考：https://www.xiebruce.top/809.html#root-3  
+* sudo su  
 
+![image](https://user-images.githubusercontent.com/74129445/141823418-7b6be4a0-dbb9-4dc8-9cf3-d8d68cb5b46e.png)  
 
+* sudo su - 
+
+![image](https://user-images.githubusercontent.com/74129445/141823481-2207eb0f-6935-43dd-b13f-e893309cebbd.png)  
+
+明显可以看出来权限不一样，sudo su 是用来开本级用户的root的，sudo su - 是用来开整个电脑权限的
