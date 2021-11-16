@@ -1,15 +1,29 @@
 首先，先说一下，[Mac不能用su开root权限，只能用sudo su开启](https://www.xiebruce.top/601.html)  
 
+然后，我感觉，看哪个命令权限大，看的是他们的环境变量，也就是谁能够操作的文件多  
+
+
 然后，直观比较一下  
 
 * sudo su  
 
-![image](https://user-images.githubusercontent.com/74129445/141823418-7b6be4a0-dbb9-4dc8-9cf3-d8d68cb5b46e.png)  
+![image](https://user-images.githubusercontent.com/74129445/141875526-eecfcc78-a6ea-460f-8b9c-a71c6190273e.png)  
 
-* sudo su - 
 
-![image](https://user-images.githubusercontent.com/74129445/141823481-2207eb0f-6935-43dd-b13f-e893309cebbd.png)  
 
-明显可以看出来权限不一样，sudo su 是用来开本级用户的root的，sudo su - 是用来开整个电脑权限的
-[详细可见](https://www.xiebruce.top/601.html)：  
-![image](https://user-images.githubusercontent.com/74129445/141826873-b9f69e10-aebe-4a62-afae-11c273d18ba9.png)  
+* sudo su -   
+
+
+
+![image](https://user-images.githubusercontent.com/74129445/141875607-74ce5250-fb4f-471f-bd6d-40693d790a8f.png)  
+
+* sudo -i  
+
+
+![image](https://user-images.githubusercontent.com/74129445/141875747-8c591e37-3996-4a93-972d-899d2c11d80b.png)  
+
+* sudo -s  
+
+![image](https://user-images.githubusercontent.com/74129445/141875863-cc4f828e-f929-4046-8591-115425f98275.png)
+
+
