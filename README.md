@@ -1,8 +1,8 @@
 * 关于PATH的作用： 
 > PATH说简单点就是一个字符串变量，当输入命令的时候LINUX会去查找PATH里面记录的路径。比如在根目录/下可以输入命令ls,在/usr目录下也可以输入ls,但其实ls这个命令根本不在这个两个目录下，事实上当你输入命令的时候LINUX会去/bin,/usr/bin,/sbin等目录下面去找你此时输入的命令，而PATH的值恰恰就是/bin:/sbin:/usr/bin:……。其中的冒号使目录与目录之间隔开。可以在脑中想一想平时打开文件的目录的样子。
 * 关于新增自定义路径： 
-现在假设你新安装了一个命令在`/usr/locar/new/bin`下面，而你又想像ls一样在任何地方都使用这个命令，你就需要修改环境变量PATH了，准确的说就是给PATH增加一个值`/usr/locar/new/bin`。你只需要一行bash命令`export PATH=$PATH:/usr/locar/new/bin`。这条命令的意思太清楚不过了，使PATH自增:`/usr/locar/new/bin`,即
-`PATH=PATH+":/usr/locar/new/bin"`;通常的做法是把这行bash命令写到`/root/.bashrc`的末尾，然后当你重新登陆LINUX的时候（应该是linux启动时就会执行这个文件），新的默认路径就添加进去了。当然这里你直接用`source /root/.bashrc`执行这个文件重新登陆了。你可以用`echo $PAT命令查看PATH的值。
+现在假设你新安装了一个命令在`/usr/locar/new/bin`下面，而你又想在任何地方都使用这个命令，你就需要修改环境变量PATH了，准确的说就是给PATH增加一个值`/usr/locar/new/bin`。你只需要一行bash命令`export PATH=$PATH:/usr/locar/new/bin`。这条命令的意思太清楚不过了，使PATH自增:`/usr/locar/new/bin`,即
+`PATH=PATH+":/usr/locar/new/bin"`;通常的做法是把这行bash命令写到`/root/.bashrc`的末尾，然后当你重新登陆LINUX的时候（应该是linux启动时就会执行这个文件），新的默认路径就添加进去了。当然这里你直接用`source /root/.bashrc`执行这个文件重新登陆了。你可以用`echo $PATH命令查看PATH的值。
 * 关于删除自定义路径： 
 > 当某天你发现你新增的路径/usr/locar/new/bin已经没用了的话，你可以修改/root/.bashrc文件里面你新增的路径。或者你可以修改/etc/profile文件删除你不需要的路径  
   
@@ -77,15 +77,18 @@
     如果使用了 readonly 命令的话，变量就不可以被修改或清除了。示例如下：   
        
 ```
-    $ export TEST="Test..."                                        
-    # 增加一个环境变量 TEST   
+    # 增加一个环境变量 TEST 
+    $ export TEST="Test..." 
+    
+    #将环境变量TEST设为只读
     $ readonly TEST 
-    #将环境变量TEST设为只读   
-    $ unset TEST 
-    #会发现此变量不能被删除   
+    
+    #会发现此变量不能被删除
+    $ unset TEST    
     -bash: unset: TEST: cannot unset: readonly variable   
-    $ TEST="New" 
-    #会发现此变量不能被修改   
+    
+    #会发现此变量不能被修改 
+    $ TEST="New"   
     -bash: TEST: readonly variable   
 ```
       
@@ -107,8 +110,9 @@
     int main ()       
     {   
         char**var;   
-        for (var =environ;*var !=NULL;++var)   
-        printf ("%s /n ",*var);   
+        for (var =environ;*var !=NULL;++var) {   
+            printf ("%s /n ",*var);  
+        }
         return 0;       
     } 
 ```
@@ -121,11 +125,9 @@
   
        
 ```
-    $cd #到用户根目录下   
-    $ls -a                                  
-    # 查看所有文件，包含隐藏的文件   
-    $vi .bash_profile                   
-    # 修改环境变量定义文件
+    $cd  #到用户根目录下  
+    $ls -a  #查看所有文件，包含隐藏的文件   
+    $vi .bash_profile #修改环境变量定义文件
     
 ```
        
