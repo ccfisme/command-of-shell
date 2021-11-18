@@ -1,3 +1,8 @@
+首先，先介绍[打开终端后系统读取文件的顺序]()
+
+然后，就是设置.bash_profile  
+
+
 * 第一步，打开终端，输入  
 
 ![image](https://user-images.githubusercontent.com/74129445/142339202-86d1b02d-6aeb-43b8-946d-3737fbc89798.png)  
