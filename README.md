@@ -1,4 +1,4 @@
-首先，先介绍[打开终端后系统读取文件的顺序]()
+首先，先介绍[.bash_profile在打开终端的过程起到的的作用](https://github.com/ccfisme/Mac-and-Linux-directory-structure/blob/%EF%BD%9E%E4%B8%8B%E7%9A%84bash_profile%E5%B9%B2%E4%BB%80%E4%B9%88%E7%94%A8%E7%9A%84%EF%BC%9F/README.md)
 
 然后，就是设置.bash_profile  
 
