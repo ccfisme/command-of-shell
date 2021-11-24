@@ -1,2 +1,5 @@
-本仓库主要参考[终端原理及操作](https://www.hanleylee.com/usage-of-terminal.html)、[Mac常用命令教程及解析](https://www.xiebruce.top/809.html#root-3)、对比[Linux命令教程](https://learnku.com/server/wikis/36491)、[Linux主要应用](https://ccstudio.com.cn/linux/part1/remote.html)(主要用这个)、**ssh重点参考[阮一峰大神的文章](https://wangdoc.com/ssh/client.html)**，他的文章浅显易懂，适合做学习总线，如果想了解细节可以参考[专业一点的文章介绍](https://ccstudio.com.cn/linux/part1/remote.html)或者搜一本有关方面的书来学习 书比较全面
+用终端写Java时，碰到了一个名为mkdir的命令，百度后发现这是一个用来创建目录的命令，格式为`mkdir 文件名`，当然，还有一些参数  
 
+![image](https://user-images.githubusercontent.com/74129445/143237304-9f16fe4c-6c91-4b72-b89f-6453ca44cf9c.png)  
+
+详见：https://jingyan.baidu.com/article/c74d6000dfebed0f6a595d18.html
