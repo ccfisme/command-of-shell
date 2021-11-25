@@ -26,11 +26,11 @@
 
 然后在另一个shell里分别用`./`和`. ./`调用ccf1.sh，通过显示其环境变量来判断是当前shell运行还是新建子shell运行  
 
-新建ccf2.sh(这里ccf2.sh的运行都用./，方便判断)
+新建ccf2.sh
 
 ![image](https://user-images.githubusercontent.com/74129445/143377419-c7e26814-a52c-4ed9-ad52-7eb4179308fb.png)  
 
-运行：  
+运行(这里ccf2.sh的运行`./`或者`. ./`没有区别)：  
 
 ![image](https://user-images.githubusercontent.com/74129445/143377473-4f746156-11a6-4d3d-b46b-92a83faad423.png)  
 
