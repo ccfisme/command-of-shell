@@ -1,6 +1,6 @@
 之前编辑文件后执行时，有时候是用`./a.out`，有时候是`source .bash_profile`，有时候是`source ./project`，不明白为什么会有这么多的执行命令，所以准备探索其中的异同。  
 
-首先，先要搞清楚而一点是，这所有的区别可以总结为`./文件`  与   `. ./文件`和`. 文件`的区别，而造成前两者区别的原因是在Mac的script脚本里都有一句`#! /bin/bash`，这个的意思是当前终端所在的shell要fork一个子shell（[fork](http://xstarcd.github.io/wiki/shell/fork_exec_source.html) ），然后执行文件，执行完了再返回终端所在的shell。 
+首先，先要搞清楚而一点是，这所有的区别可以总结为`./文件`  与   `. ./文件的区别，而造成前两者区别的原因是在Mac的script脚本里都有一句`#! /bin/bash`，这个的意思是当前终端所在的shell要fork一个子shell（[fork](http://xstarcd.github.io/wiki/shell/fork_exec_source.html) ），然后执行文件，执行完了再返回终端所在的shell。 
 
 
 所以，目的就明确了。探索的目的是探究父shell与子shell之间的联系  
@@ -49,9 +49,16 @@
 
 ---  
 
+# 读完部分Linux C编程一站式学习后补充
+
 `#! /bin/bash`的作用：  
 
 ![image](https://user-images.githubusercontent.com/74129445/143484710-5a5f5b84-0a76-4287-8d82-3f035c667a11.png)  
+
+什么时候新建shell？  
+
+![image](https://user-images.githubusercontent.com/74129445/143485208-cd156686-b914-4284-934a-6a5a85f3c51a.png)  
+也就是说，凡不是内置命令的想要运行.sh文件，都要通过`./`命令新建一个shell运行
 
 
 
