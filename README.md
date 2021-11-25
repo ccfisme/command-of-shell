@@ -1,2 +1,5 @@
-本仓库主要参考[终端原理及操作](https://www.hanleylee.com/usage-of-terminal.html)、[Mac常用命令教程及解析](https://www.xiebruce.top/809.html#root-3)、[linux命令全称](https://zhuanlan.zhihu.com/p/64105558)、对比[Linux命令教程](https://learnku.com/server/wikis/36491)、[Linux主要应用](https://ccstudio.com.cn/linux/part1/remote.html)(主要用这个)、**ssh重点参考[阮一峰大神的文章](https://wangdoc.com/ssh/client.html)**，他的文章浅显易懂，适合做学习总线，如果想了解细节可以参考[专业一点的文章介绍](https://ccstudio.com.cn/linux/part1/remote.html)或者搜一本有关方面的书来学习 书比较全面
+得安装才能用，是对命令的翻译，比如，在Java8这种内含汉化包的环境，用help会出现中文帮助，而在Mac中使用help会出现英文的，不过也不用这么麻烦，直接复制搜就行吧  
 
+![image](https://user-images.githubusercontent.com/74129445/143333442-77ccc0f6-a926-403b-91dd-1448a0e70e4b.png)  
+
+![image](https://user-images.githubusercontent.com/74129445/143333570-5f9fb1e9-04be-434d-b251-6bbd74bc2149.png)
