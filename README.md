@@ -50,7 +50,9 @@
 
 
 
-参考：https://www.cnblogs.com/cangqinglang/p/11085013.html
+参考：  
+* [实践](https://www.cnblogs.com/cangqinglang/p/11085013.html)  
+* [原理](http://docs.linuxtone.org/ebooks/C&CPP/c/ch31s02.html)
 
 
 
