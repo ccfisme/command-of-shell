@@ -15,5 +15,7 @@ java用于运行.class文件。形式如下：`java [option] classname [argument
 参考：  
 * https://github.com/ccfisme/JAVA/tree/Java%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E7%9A%84%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4  
 
-* https://www.jianshu.com/p/033dcc32e8cd
+* https://www.jianshu.com/p/033dcc32e8cd  
+
+* http://docs.linuxtone.org/ebooks/C&CPP/c/ch31s03.html
 
