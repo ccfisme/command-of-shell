@@ -1,6 +1,6 @@
 之前编辑文件后执行时，有时候是用`./a.out`，有时候是`source .bash_profile`，有时候是`source ./project`，不明白为什么会有这么多的执行命令，所以准备探索其中的异同。  
 
-首先，先要搞清楚而一点是，这所有的区别可以总结为`./文件`  与   `. ./文件`和`. 文件`的区别，而造成前两者区别的原因是在Mac的script脚本里都有一句`#! /bin/bash`，这个的意思是当前终端所在的shell fork一个子shell（详见http://xstarcd.github.io/wiki/shell/fork_exec_source.html ），然后执行文件，执行完了再返回终端所在的shell。 
+首先，先要搞清楚而一点是，这所有的区别可以总结为`./文件`  与   `. ./文件`和`. 文件`的区别，而造成前两者区别的原因是在Mac的script脚本里都有一句`#! /bin/bash`，这个的意思是当前终端所在的shell要fork一个子shell（[fork](http://xstarcd.github.io/wiki/shell/fork_exec_source.html) ），然后执行文件，执行完了再返回终端所在的shell。 
 
 
 所以，目的就明确了。探索的目的是探究父shell与子shell之间的联系  
