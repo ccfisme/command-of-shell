@@ -1,2 +1,13 @@
-本仓库主要参考[终端原理及操作](https://www.hanleylee.com/usage-of-terminal.html)、[Mac常用命令教程及解析](https://www.xiebruce.top/809.html#root-3)、[linux命令全称](https://zhuanlan.zhihu.com/p/64105558)、对比[Linux命令教程](https://learnku.com/server/wikis/36491)、[Linux主要应用](https://ccstudio.com.cn/linux/part1/remote.html)(主要用这个)、**ssh重点参考[阮一峰大神的文章](https://wangdoc.com/ssh/client.html)**，他的文章浅显易懂，适合做学习总线，如果想了解细节可以参考[专业一点的文章介绍](https://ccstudio.com.cn/linux/part1/remote.html)或者搜一本有关方面的书来学习 书比较全面
+# javac命令行  
 
+javac用于编译java源文件，生成.class文件。形式如下`javac [option] source`  
+
+
+
+# 2.java命令行  
+
+java用于运行生成的.class文件。形式如下：`java [option] classname [arguments]`  
+
+其中，Java后面的最终文件不能含有.class，否则会报错  
+
+![image](https://user-images.githubusercontent.com/74129445/143438706-955f91d2-bf69-46c1-ba55-177586bded16.png)  
