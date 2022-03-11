@@ -1,1 +1,1 @@
-本仓库主要参考[终端原理及操作](https://www.hanleylee.com/usage-of-terminal.html)、[Mac常用命令教程及解析](https://www.xiebruce.top/809.html#root-3)、[linux命令全称](https://zhuanlan.zhihu.com/p/64105558)、对比[Linux命令教程](https://learnku.com/server/wikis/36491)、[Linux主要应用](https://ccstudio.com.cn/linux/part1/remote.html)(主要用这个)、[Shell如何执行命令](http://docs.linuxtone.org/ebooks/C&CPP/c/ch31s02.html)
+没什么别的想法，就是觉得往这些终端里面输入命令行，其实也是在写代码，然后被终端编译器识别，然后再编译，再链接，然后根据自己输入的文件位置去找文件，没有输入位置就从当前目录去找，也是一个有点意思的东西，尤其是之前设置c++的<bits\stdc++.h>，这个东西很帅，要学学
